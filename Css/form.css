@@ -1,0 +1,134 @@
+/* ── Form Container ── */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    max-width: 380px;
+    padding: 36px 32px 40px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+/* ── Heading ── */
+h1 {
+    margin: 0 0 4px 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #2d2d2d;
+    letter-spacing: 1px;
+}
+
+/* ── Shared Input / Button Base ── */
+input, .Submit {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-family: 'Geist Pixel', sans-serif;
+    outline: none;
+}
+
+/* ── Tab Buttons ── */
+.tab-buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.tab-buttons button {
+    padding: 10px 0;
+    border: 1px solid #d0d0d0;
+    background: #f5f5f5;
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    color: #555;
+}
+
+.tab-buttons button:hover {
+    background: #eaeaea;
+    color: #333;
+}
+
+.tab-buttons button:active {
+    transform: scale(0.97);
+}
+
+.tab-buttons :nth-child(1) {
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.tab-buttons :nth-child(2) {
+    width: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* ── Text Inputs ── */
+input {
+    border: 2px solid #e0e0e0;
+    background: #fafafa;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+input:focus {
+    border-color: #667eea;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+}
+
+input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* ── Submit Button ── */
+.Submit {
+    border: none;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+}
+
+.Submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+.Submit:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* ── Form Visibility Toggle ── */
+.hidden-form {
+    display: none;
+}
+
+.active-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
