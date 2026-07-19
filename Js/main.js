@@ -22,7 +22,7 @@ async function account_check(){ // Returns user to signup page if they haven't l
     let res = await response.json()
 
     if(!res.logged_in){
-        window.location.href = "form.html"
+        window.location.href = "index.html"
     }
 }
 
@@ -168,7 +168,7 @@ async function logout(){
     })
 
     if(response.ok){
-        window.location.href = "form.html"
+        window.location.href = "index.html"
     }
 }
 
