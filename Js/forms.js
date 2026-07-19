@@ -1,5 +1,5 @@
 const $ = (id) => document.getElementById(id)
-const url = "https://fastapi-simplechatbot.onrender.com"
+const url = "http://127.0.0.1:8000"
 
 // logic to change between forms
 document.querySelectorAll(".tab-buttons button").forEach(btn => {

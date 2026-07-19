@@ -1,4 +1,4 @@
-const url = "https://fastapi-simplechatbot.onrender.com"
+const url = "http://127.0.0.1:8000"
 const $ = (id) => document.getElementById(id)
 var NewChat = true
 var title = ""
